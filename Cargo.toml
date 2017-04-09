@@ -1,0 +1,13 @@
+[package]
+name = "drm-cdi"
+version = "0.1.0"
+description = ""
+repository = "https://github.com/devurandom/drm-cdi-rs"
+authors = ["Dennis Schridde <devurandom@gmx.net>"]
+license = "GPL-3"
+
+[dependencies]
+libdrm = "0.1.0"
+serde = "0.9.0"
+serde_derive = "0.9.0"
+serde_json = "0.9.0"
