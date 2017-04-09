@@ -44,7 +44,7 @@ impl Command {
 
 fn get_device_id(d: &drm::Device) -> String {
     return match d.info {
-        drm::DeviceInfo::Pci {bus, dev: _} => format!("{}:{}:{}.{}", bus.domain, bus.bus, bus.dev, bus.func),
+        drm::DeviceInfo::Pci {bus, dev: _} => format!("{:04}:{:02}:{:02}.{}", bus.domain, bus.bus, bus.dev, bus.func),
         drm::DeviceInfo::Usb {bus, dev: _} => format!("{}:{}", bus.bus, bus.dev),
         drm::DeviceInfo::Platform {ref bus, dev: _} => bus.fullname.clone(),
         drm::DeviceInfo::Host1x {ref bus, dev: _} => bus.fullname.clone(),
