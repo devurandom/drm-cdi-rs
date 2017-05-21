@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 repository = "https://github.com/devurandom/drm-cdi-rs"
 authors = ["Dennis Schridde <devurandom@gmx.net>"]
-license = "GPL-3"
+license = "GPL-3.0+"
 
 [dependencies]
 libdrm = "0.1.0"
